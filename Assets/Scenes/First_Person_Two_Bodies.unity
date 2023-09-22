@@ -994,11 +994,11 @@ GameObject:
   - component: {fileID: 879054642}
   m_Layer: 7
   m_Name: LocomotionSystem
-  m_TagString: SwitchComponents
+  m_TagString: BodyTwoSwitchComponents
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &879054641
 Transform:
   m_ObjectHideFlags: 0
@@ -1231,8 +1231,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be18a366677397c4d82318a32930c5da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyOne: {fileID: 0}
-  bodyTwo: {fileID: 0}
+  bodyOne: {fileID: 992309054}
+  bodyTwo: {fileID: 1846215426676626277}
 --- !u!1 &1007797202
 GameObject:
   m_ObjectHideFlags: 0
@@ -4383,7 +4383,7 @@ GameObject:
   - component: {fileID: 1846215426529850354}
   m_Layer: 7
   m_Name: HeadTarget
-  m_TagString: SwitchComponents
+  m_TagString: BodyTwoSwitchComponents
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4417,11 +4417,11 @@ GameObject:
   - component: {fileID: 1846215426625552264}
   m_Layer: 7
   m_Name: TrackingSpace
-  m_TagString: SwitchComponents
+  m_TagString: BodyTwoSwitchComponents
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1846215426676626200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4534,6 +4534,7 @@ GameObject:
   - component: {fileID: 1846215426676626200}
   - component: {fileID: 1846215426676626206}
   - component: {fileID: 1846215426676626207}
+  - component: {fileID: 1846215426676626278}
   m_Layer: 7
   m_Name: Body 2
   m_TagString: Untagged
@@ -4541,6 +4542,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1846215426676626278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846215426676626277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be18a366677397c4d82318a32930c5da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyOne: {fileID: 992309054}
+  bodyTwo: {fileID: 1846215426676626277}
 --- !u!1 &1846215427134433648
 GameObject:
   m_ObjectHideFlags: 0
@@ -4686,7 +4701,7 @@ GameObject:
   - component: {fileID: 1846215427264013327}
   m_Layer: 7
   m_Name: LeftHandConstraint
-  m_TagString: SwitchComponents
+  m_TagString: BodyTwoSwitchComponents
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4917,7 +4932,7 @@ GameObject:
   - component: {fileID: 1846215427265675115}
   m_Layer: 7
   m_Name: RightHand Controller
-  m_TagString: SwitchComponents
+  m_TagString: BodyTwoSwitchComponents
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5507,7 +5522,7 @@ GameObject:
   - component: {fileID: 1846215427397273496}
   m_Layer: 7
   m_Name: RightHandConstraint
-  m_TagString: SwitchComponents
+  m_TagString: BodyTwoSwitchComponents
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5840,7 +5855,7 @@ GameObject:
   - component: {fileID: 1846215427566176946}
   m_Layer: 7
   m_Name: LeftHand Controller
-  m_TagString: SwitchComponents
+  m_TagString: BodyTwoSwitchComponents
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6101,7 +6116,7 @@ GameObject:
   - component: {fileID: 1846215427919706367}
   m_Layer: 7
   m_Name: RightHandTarget
-  m_TagString: SwitchComponents
+  m_TagString: BodyTwoSwitchComponents
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6263,7 +6278,7 @@ GameObject:
   - component: {fileID: 1846215428095906148}
   m_Layer: 7
   m_Name: HeadConstraint
-  m_TagString: SwitchComponents
+  m_TagString: BodyTwoSwitchComponents
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6294,7 +6309,7 @@ GameObject:
   - component: {fileID: 1846215428120697900}
   m_Layer: 7
   m_Name: LeftHandTarget
-  m_TagString: SwitchComponents
+  m_TagString: BodyTwoSwitchComponents
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
