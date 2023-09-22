@@ -241,7 +241,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 440690052}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.1176, z: 0}
+  m_LocalPosition: {x: 0, y: 1.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -527,6 +527,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 643893084}
+  - component: {fileID: 643893085}
   m_Layer: 0
   m_Name: HeadTarget
   m_TagString: Untagged
@@ -549,6 +550,57 @@ Transform:
   m_Father: {fileID: 1174064435}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &643893085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643893083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8935e03361a14ec4b8edc872f76bc822, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Weight: 1
+  m_Data:
+    m_ConstrainedObject: {fileID: 643893084}
+    m_SourceObjects:
+      m_Length: 1
+      m_Item0:
+        transform: {fileID: 1693199304}
+        weight: 1
+      m_Item1:
+        transform: {fileID: 0}
+        weight: 0
+      m_Item2:
+        transform: {fileID: 0}
+        weight: 0
+      m_Item3:
+        transform: {fileID: 0}
+        weight: 0
+      m_Item4:
+        transform: {fileID: 0}
+        weight: 0
+      m_Item5:
+        transform: {fileID: 0}
+        weight: 0
+      m_Item6:
+        transform: {fileID: 0}
+        weight: 0
+      m_Item7:
+        transform: {fileID: 0}
+        weight: 0
+    m_ConstrainedPositionAxes:
+      x: 1
+      y: 1
+      z: 1
+    m_ConstrainedRotationAxes:
+      x: 1
+      y: 1
+      z: 1
+    m_MaintainPositionOffset: 0
+    m_MaintainRotationOffset: 0
 --- !u!1 &660759865
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,6 +866,8 @@ GameObject:
   - component: {fileID: 992309055}
   - component: {fileID: 992309059}
   - component: {fileID: 992309058}
+  - component: {fileID: 992309061}
+  - component: {fileID: 992309060}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -850,7 +904,7 @@ MonoBehaviour:
   m_Camera: {fileID: 1693199307}
   m_OriginBaseGameObject: {fileID: 992309054}
   m_CameraFloorOffsetObject: {fileID: 440690052}
-  m_RequestedTrackingOriginMode: 1
+  m_RequestedTrackingOriginMode: 2
   m_CameraYOffset: 1.1176
 --- !u!4 &992309057
 Transform:
@@ -883,19 +937,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 992309059}
-  m_MoveSpeed: 1
+  m_MoveSpeed: 2
   m_EnableStrafe: 1
   m_EnableFly: 0
   m_UseGravity: 1
   m_GravityApplicationMode: 0
-  m_ForwardSource: {fileID: 1693199304}
+  m_ForwardSource: {fileID: 0}
   m_LeftHandMoveAction:
     m_UseReference: 1
     m_Action:
       m_Name: Left Hand Move
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 79671af5-ead8-4f1c-8b2b-8f3887c30f81
+      m_Id: 22922dbd-239e-4ed4-b76b-bedee1241c39
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -907,7 +961,7 @@ MonoBehaviour:
       m_Name: Right Hand Move
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 4991739d-73a8-47c7-b1a0-af95fac67572
+      m_Id: 61c7701e-019b-4a0c-968f-53a87df65032
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -927,6 +981,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Timeout: 10
   m_XROrigin: {fileID: 992309056}
+--- !u!114 &992309060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992309054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af6bf904e410ee8479f9093d8830d1f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LocomotionProvider: {fileID: 992309058}
+  m_MinHeight: 0
+  m_MaxHeight: Infinity
+--- !u!143 &992309061
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992309054}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1014987345
 GameObject:
   m_ObjectHideFlags: 0
@@ -1136,8 +1223,8 @@ MonoBehaviour:
     m_TargetPositionWeight: 1
     m_TargetRotationWeight: 1
     m_HintWeight: 1
-    m_MaintainTargetPositionOffset: 0
-    m_MaintainTargetRotationOffset: 0
+    m_MaintainTargetPositionOffset: 1
+    m_MaintainTargetRotationOffset: 1
 --- !u!1 &1566890157
 GameObject:
   m_ObjectHideFlags: 0
@@ -1194,8 +1281,8 @@ MonoBehaviour:
     m_TargetPositionWeight: 1
     m_TargetRotationWeight: 1
     m_HintWeight: 1
-    m_MaintainTargetPositionOffset: 0
-    m_MaintainTargetRotationOffset: 0
+    m_MaintainTargetPositionOffset: 1
+    m_MaintainTargetRotationOffset: 1
 --- !u!1 &1572670107
 GameObject:
   m_ObjectHideFlags: 0
