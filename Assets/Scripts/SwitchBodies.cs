@@ -91,7 +91,10 @@ public class SwitchBodies : MonoBehaviour
                 bodyOneIsActive = false;
                 Debug.Log("Switched components from body one to body two");
             }
-            
+        }
+
+        if((leftXRController.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue2) && primaryButtonValue2))
+        {
             if (!bodyOneIsActive)
             {
                 Debug.Log("Body two is active");
