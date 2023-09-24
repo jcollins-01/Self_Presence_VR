@@ -10,6 +10,7 @@ public class ThirdPersonGrab : MonoBehaviour
     public GameObject bodyOneRightHand;
     public GameObject bodyTwoRightHand;
     private GameObject grabbable;
+    private Vector3 grabbableScale;
 
     private InputDevice rightXRController;
     private InputDevice leftXRController;
@@ -19,7 +20,7 @@ public class ThirdPersonGrab : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     public void getControllers()
@@ -64,12 +65,19 @@ public class ThirdPersonGrab : MonoBehaviour
         if (hit.transform.gameObject.layer == 6)
         {
             grabbable = hit.gameObject;
+            grabbableScale = grabbable.transform.localScale;
             if (rightXRController.TryGetFeatureValue(CommonUsages.grip, out float gripValue))
             {
                 if (gripValue > 0.1f)
                 {
                     Debug.Log("Attempting grab with third person body one");
-                    GrabObject(thirdPersonBodyOne);
+                    GrabObject(bodyOneRightHand);
+                }
+                else
+                {
+                    // Third person body collided with grabbable, but isn't grabbing
+                    Debug.Log("Attempting drop with third person body one");
+                    DropObject();
                 }
             }
         }
@@ -78,20 +86,37 @@ public class ThirdPersonGrab : MonoBehaviour
         if (hit.transform.gameObject.layer == 6)
         {
             grabbable = hit.gameObject;
+            grabbableScale = grabbable.transform.localScale;
             if (leftXRController.TryGetFeatureValue(CommonUsages.grip, out float gripValue))
             {
                 if (gripValue > 0.1f)
                 {
                     Debug.Log("Attempting grab with third person body two");
-                    GrabObject(thirdPersonBodyTwo);
+                    GrabObject(bodyTwoRightHand);
+                }
+                else
+                {
+                    // Third person body collided with grabbable, but isn't grabbing
+                    Debug.Log("Attempting drop with third person body two");
+                    DropObject();
                 }
             }
         }
     }
 
-    public void GrabObject(GameObject grabbingBody)
+    public void GrabObject(GameObject grabbingHand)
     {
-        Debug.Log("Trying to grab with " + grabbingBody);
-        //grabbable.transform.SetParent(grabbingBody.transform);
+        Debug.Log("Trying to grab with " + grabbingHand);
+        grabbable.transform.SetParent(grabbingHand.transform);
+        grabbable.transform.localPosition = new Vector3(0f, 0f, 0f);
+        grabbable.transform.localScale = grabbableScale;
+    }
+
+    public void DropObject()
+    {
+        Debug.Log("Trying to drop grabbable");
+        grabbable.transform.parent = null;
+        grabbable.transform.localScale = grabbableScale;
+        grabbable.GetComponent<Rigidbody>().useGravity = true;
     }
 }

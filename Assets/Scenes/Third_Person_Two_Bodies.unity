@@ -7952,6 +7952,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thirdPersonBodyOne: {fileID: 9005482972824918058}
   thirdPersonBodyTwo: {fileID: 3097449515636061430}
+  bodyOneRightHand: {fileID: 814756324946141585}
+  bodyTwoRightHand: {fileID: 6722509127464340813}
 --- !u!4 &8600133442860993775
 Transform:
   m_ObjectHideFlags: 0
@@ -8393,6 +8395,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thirdPersonBodyOne: {fileID: 9005482972824918058}
   thirdPersonBodyTwo: {fileID: 3097449515636061430}
+  bodyOneRightHand: {fileID: 814756324946141585}
+  bodyTwoRightHand: {fileID: 6722509127464340813}
 --- !u!4 &9014916108536722095
 Transform:
   m_ObjectHideFlags: 0
