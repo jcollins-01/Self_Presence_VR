@@ -104,6 +104,7 @@ public class ThirdPersonGrab : MonoBehaviour
         grabbable.transform.localPosition = new Vector3(0f, 0f, 0f);
         grabbable.transform.localScale = grabbableScale;
         grabbable.GetComponent<Rigidbody>().useGravity = false;
+        grabbable.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, 0f);
     }
 
     public void DropObject()
