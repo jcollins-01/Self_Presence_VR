@@ -11,6 +11,7 @@ public class SwitchBodies : MonoBehaviour
     private bool bodyOneIsActive = true;
     private GameObject[] switchComponents;
     private GameObject[] bodyTwoSwitchComponents;
+    private Vector3 bodyTwoPosition;
 
     private InputDevice rightXRController;
     private InputDevice leftXRController;
@@ -22,6 +23,7 @@ public class SwitchBodies : MonoBehaviour
         // Find all switch components in scene
         switchComponents = GameObject.FindGameObjectsWithTag("SwitchComponents");
         bodyTwoSwitchComponents = GameObject.FindGameObjectsWithTag("BodyTwoSwitchComponents");
+        bodyTwoPosition = bodyTwo.GetComponent<Transform>().position;
 
         // Deactivate bodyTwo components
         for (int i = 0; i < bodyTwoSwitchComponents.Length; i++)
@@ -113,5 +115,8 @@ public class SwitchBodies : MonoBehaviour
                 Debug.Log("Switched components from body two to body one");
             }
         }
+
+        bodyTwoPosition = new Vector3(bodyTwoPosition.x, 0, bodyTwoPosition.z);
+        Debug.Log("Zeroed body two's y position");
     }
 }
