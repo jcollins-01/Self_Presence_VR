@@ -6999,6 +6999,7 @@ GameObject:
   - component: {fileID: 2856907109003079040}
   - component: {fileID: 8641270331640093452}
   - component: {fileID: 5423929040061941628}
+  - component: {fileID: 8641270331640093453}
   m_Layer: 8
   m_Name: Body 2
   m_TagString: Player
@@ -9804,7 +9805,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -3552364970006637457, guid: 4419d82f33d36e848b3ed5af4c8da37e, type: 3}
   jumpAction:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Jump
       m_Type: 0
@@ -9834,6 +9835,22 @@ MonoBehaviour:
   analogMovement: 0
   cursorLocked: 1
   cursorInputForLook: 1
+--- !u!114 &8641270331640093453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5423929040061941616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 357a5051619e8254daab216783e99292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thirdPersonBodyOne: {fileID: 5423929040061941616}
+  thirdPersonBodyTwo: {fileID: 0}
+  bodyOneRightHand: {fileID: 4391807035804843723}
+  bodyTwoRightHand: {fileID: 0}
 --- !u!4 &8694596933495429798
 Transform:
   m_ObjectHideFlags: 0

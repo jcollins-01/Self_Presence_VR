@@ -2044,7 +2044,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 9081358577653304646, guid: 4419d82f33d36e848b3ed5af4c8da37e, type: 3}
   jumpAction:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Jump
       m_Type: 0
@@ -3939,7 +3939,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -3552364970006637457, guid: 4419d82f33d36e848b3ed5af4c8da37e, type: 3}
   jumpAction:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Jump
       m_Type: 0

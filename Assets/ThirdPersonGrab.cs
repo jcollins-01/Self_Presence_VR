@@ -20,7 +20,6 @@ public class ThirdPersonGrab : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
     }
 
     public void getControllers()
@@ -54,52 +53,46 @@ public class ThirdPersonGrab : MonoBehaviour
     void Update()
     {
         getControllers();
-    }
 
+        if (rightXRController.TryGetFeatureValue(CommonUsages.secondaryButton, out bool secondaryButtonValue) && secondaryButtonValue)
+        {
+            Debug.Log("Attempting drop with third person body one");
+            DropObject();
+        }
+
+        if (leftXRController.TryGetFeatureValue(CommonUsages.secondaryButton, out bool secondaryButtonValue2) && secondaryButtonValue2)
+        {
+            Debug.Log("Attempting drop with third person body two");
+            DropObject();
+        }
+    }
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        //Debug.Log("Something collided with the grabbable object");
-
         // If the grabbable collided with the first third-person body, uses right hand controller
         // Layer 6 is Interactables
-        if (hit.transform.gameObject.layer == 6)
+
+        if (hit.transform.gameObject.layer == 6 && gameObject == thirdPersonBodyOne)
         {
             grabbable = hit.gameObject;
             grabbableScale = grabbable.transform.localScale;
-            if (rightXRController.TryGetFeatureValue(CommonUsages.grip, out float gripValue))
+            // switch from grip to primary button?
+            if (rightXRController.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue) && primaryButtonValue)
             {
-                if (gripValue > 0.1f)
-                {
-                    Debug.Log("Attempting grab with third person body one");
-                    GrabObject(bodyOneRightHand);
-                }
-                else
-                {
-                    // Third person body collided with grabbable, but isn't grabbing
-                    Debug.Log("Attempting drop with third person body one");
-                    DropObject();
-                }
+                Debug.Log("Attempting grab with third person body one");
+                GrabObject(bodyOneRightHand);
             }
         }
 
         // If the grabbable collided with the second third-person body, uses left hand controller
-        if (hit.transform.gameObject.layer == 6)
+        if (hit.transform.gameObject.layer == 6 && gameObject == thirdPersonBodyTwo)
         {
             grabbable = hit.gameObject;
             grabbableScale = grabbable.transform.localScale;
-            if (leftXRController.TryGetFeatureValue(CommonUsages.grip, out float gripValue))
+
+            if (leftXRController.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue) && primaryButtonValue)
             {
-                if (gripValue > 0.1f)
-                {
-                    Debug.Log("Attempting grab with third person body two");
-                    GrabObject(bodyTwoRightHand);
-                }
-                else
-                {
-                    // Third person body collided with grabbable, but isn't grabbing
-                    Debug.Log("Attempting drop with third person body two");
-                    DropObject();
-                }
+                Debug.Log("Attempting grab with third person body two");
+                GrabObject(bodyTwoRightHand);
             }
         }
     }
@@ -110,6 +103,7 @@ public class ThirdPersonGrab : MonoBehaviour
         grabbable.transform.SetParent(grabbingHand.transform);
         grabbable.transform.localPosition = new Vector3(0f, 0f, 0f);
         grabbable.transform.localScale = grabbableScale;
+        grabbable.GetComponent<Rigidbody>().useGravity = false;
     }
 
     public void DropObject()
