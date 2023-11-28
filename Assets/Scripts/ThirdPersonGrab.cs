@@ -17,9 +17,12 @@ public class ThirdPersonGrab : MonoBehaviour
     private bool rightControllerGrabbed = false;
     private bool leftControllerGrabbed = false;
 
+    private ExperimentLogger logger;
     // Start is called before the first frame update
     void Start()
     {
+        //Find logger
+        logger = GetComponent<ExperimentLogger>();
     }
 
     public void getControllers()
@@ -58,12 +61,18 @@ public class ThirdPersonGrab : MonoBehaviour
         {
             Debug.Log("Attempting drop with third person body one");
             DropObject();
+
+            //Log button press
+            logger.RecordKey("RightSecondary", "Drop Grabbable with body one");
         }
 
         if (leftXRController.TryGetFeatureValue(CommonUsages.secondaryButton, out bool secondaryButtonValue2) && secondaryButtonValue2)
         {
             Debug.Log("Attempting drop with third person body two");
             DropObject();
+
+            //Log button press
+            logger.RecordKey("LeftSecondary", "Drop Grabbable with body two");
         }
     }
     private void OnControllerColliderHit(ControllerColliderHit hit)
@@ -80,6 +89,9 @@ public class ThirdPersonGrab : MonoBehaviour
             {
                 Debug.Log("Attempting grab with third person body one");
                 GrabObject(bodyOneRightHand);
+
+                //Log button press
+                logger.RecordKey("RightPrimary", "Grab Grabbable with body one");
             }
         }
 
@@ -93,6 +105,9 @@ public class ThirdPersonGrab : MonoBehaviour
             {
                 Debug.Log("Attempting grab with third person body two");
                 GrabObject(bodyTwoRightHand);
+
+                //Log button press
+                logger.RecordKey("LeftPrimary", "Grab Grabbable with body two");
             }
         }
     }

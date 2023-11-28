@@ -17,6 +17,8 @@ public class SwitchBodies : MonoBehaviour
     private InputDevice leftXRController;
     private bool rightControllerGrabbed = false;
     private bool leftControllerGrabbed = false;
+
+    private ExperimentLogger logger;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +32,9 @@ public class SwitchBodies : MonoBehaviour
         {
             bodyTwoSwitchComponents[i].SetActive(false);
         }
+
+        //Find logger
+        logger = GetComponent<ExperimentLogger>();
     }
 
     public void getControllers()
@@ -92,6 +97,9 @@ public class SwitchBodies : MonoBehaviour
                 }
                 bodyOneIsActive = false;
                 Debug.Log("Switched components from body one to body two");
+
+                //Log button press
+                logger.RecordKey("RightPrimary", "Switch to body two");
             }
         }
 
@@ -113,6 +121,9 @@ public class SwitchBodies : MonoBehaviour
                 }
                 bodyOneIsActive = true;
                 Debug.Log("Switched components from body two to body one");
+
+                //Log button press
+                logger.RecordKey("LeftPrimary", "Switch to body one");
             }
         }
 
