@@ -5368,6 +5368,114 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2912903e78887b4f948b4370b7866de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Move
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 275ccb3c-8884-4e79-ae7e-0d7102876df8
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 6972639530819350904, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  jumpAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Jump
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: a553c358-4298-40c4-921c-5ecdf7adf96d
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  sprintAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Sprint
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: e2714464-902d-48a3-9c33-a2f04b959d50
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  moveTwoAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Move Two
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: fef3a8e2-ad2d-4aa8-bd7d-93ba1d719fa7
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  jumpTwoAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Jump Two
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 463f2ad0-82d3-4e4d-a2ac-91dee22d9391
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  sprintTwoAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Sprint Two
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: e146203c-06bc-4b03-a072-51d27312adb0
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  grabLeftAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Grab Left
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 0b52aaa2-f7d8-43a5-9bc8-b39bfb4e9f7c
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  grabRightAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Grab Right
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 0a3242ac-c1e3-4cb6-979d-366841391aa5
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  snapTurnAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Snap Turn
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: feb32fa6-4881-4c03-b232-c8cbbab0bae4
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -8525429354371678379, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!4 &602893549
 Transform:
   m_ObjectHideFlags: 0
