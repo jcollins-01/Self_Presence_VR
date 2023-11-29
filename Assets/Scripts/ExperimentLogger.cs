@@ -27,11 +27,11 @@ public class ExperimentLogger : MonoBehaviour
         Debug.Log(filePath);
         
         moveAction.action.performed += (ctx) => RecordKey(ctx.control.name, "Move body one", ctx.ReadValue<Vector2>().ToString());
-        // jumpAction.action.performed += (ctx) => RecordKey(ctx.control.name, "Jump body one");
-        sprintAction.action.performed += (ctx) => RecordKey(ctx.control.name, "Sprint body one");
+        jumpAction.action.performed += (ctx) => RecordKey(ctx.control.name, "Jump body one");
+        // sprintAction.action.performed += (ctx) => RecordKey(ctx.control.name, "Sprint body one");
         moveTwoAction.action.performed += (ctx) => RecordKey(ctx.control.name, "Move body two", ctx.ReadValue<Vector2>().ToString());
-        // jumpTwoAction.action.performed += (ctx) => RecordKey(ctx.control.name, "Jump body two");
-        sprintTwoAction.action.performed += (ctx) => RecordKey(ctx.control.name, "Sprint body two");
+        jumpTwoAction.action.performed += (ctx) => RecordKey(ctx.control.name, "Jump body two");
+        // sprintTwoAction.action.performed += (ctx) => RecordKey(ctx.control.name, "Sprint body two");
         grabLeftAction.action.performed += (ctx) => RecordKey(ctx.control.name, "Grab left");
         grabRightAction.action.performed += (ctx) => RecordKey(ctx.control.name, "Grab right");
         snapTurnAction.action.performed += (ctx) => RecordKey(ctx.control.name, "Snap turn", ctx.ReadValue<Vector2>().ToString());
@@ -79,6 +79,8 @@ public class ExperimentLogger : MonoBehaviour
 
         counter++;
     }
+
+    //Map a starter asset to the first person controller? to keep track of?
 
     // void OnMove(InputAction.CallbackContext context) {
     //     Debug.Log("Move");

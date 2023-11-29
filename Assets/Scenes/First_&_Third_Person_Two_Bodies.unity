@@ -7000,6 +7000,7 @@ GameObject:
   - component: {fileID: 8641270331640093452}
   - component: {fileID: 5423929040061941628}
   - component: {fileID: 8641270331640093453}
+  - component: {fileID: 8641270331640093454}
   m_Layer: 8
   m_Name: Body 2
   m_TagString: Player
@@ -9851,6 +9852,127 @@ MonoBehaviour:
   thirdPersonBodyTwo: {fileID: 0}
   bodyOneRightHand: {fileID: 4391807035804843723}
   bodyTwoRightHand: {fileID: 0}
+  logger: {fileID: 8641270331640093454}
+--- !u!114 &8641270331640093454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5423929040061941616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2912903e78887b4f948b4370b7866de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Move
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: dde888a5-29ff-4551-9212-39c159442aab
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  jumpAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Jump
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 2350351e-fba0-488d-bed1-3f4600e65e30
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  sprintAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Sprint
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: dbf755dc-6002-4287-bc0e-0b166ca72667
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  moveTwoAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Move Two
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: d56f80d0-b40a-4ace-8db2-18f79d3c3039
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  jumpTwoAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Jump Two
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 29ffa7c2-9ca0-484b-9a18-da15f5f7c2fd
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  sprintTwoAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Sprint Two
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 6c15904c-55ca-4ebc-94a2-baf33bef73c7
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  grabLeftAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Grab Left
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: c22c18fc-f527-43df-844d-67b429950539
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  grabRightAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Grab Right
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 8ce3ba4d-a43a-4d0f-93b7-fba57bfb06f2
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  snapTurnAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Snap Turn
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 8b45ec8f-26aa-4172-a68a-1edfadcd0d0c
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
 --- !u!4 &8694596933495429798
 Transform:
   m_ObjectHideFlags: 0
