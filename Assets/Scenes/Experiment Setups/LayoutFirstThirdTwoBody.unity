@@ -3251,7 +3251,7 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: -3967123487338460795, guid: 4419d82f33d36e848b3ed5af4c8da37e, type: 3}
+    m_Reference: {fileID: 15759602096507913, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   snapTurnAction:
     m_UseReference: 0
     m_Action:
