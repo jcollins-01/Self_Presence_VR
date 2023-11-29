@@ -632,6 +632,7 @@ MonoBehaviour:
   thirdPersonBodyTwo: {fileID: 54134398}
   bodyOneRightHand: {fileID: 444743845}
   bodyTwoRightHand: {fileID: 1633018928}
+  logger: {fileID: 0}
 --- !u!114 &54134400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -898,8 +899,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 54134398}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1.5, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -1.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -908,7 +909,7 @@ Transform:
   - {fileID: 1187789722}
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &58494007
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11807,6 +11808,114 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2912903e78887b4f948b4370b7866de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Move
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: edbca8c3-a8c8-4c34-8c30-9b37a4204f8b
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -3552364970006637457, guid: 4419d82f33d36e848b3ed5af4c8da37e, type: 3}
+  jumpAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Jump
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 40a54e66-8705-40ef-ab51-15a3d63d124f
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -1916377846673030204, guid: 4419d82f33d36e848b3ed5af4c8da37e, type: 3}
+  sprintAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Sprint
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 7cb43b0a-5432-4220-9800-8cf04af2ebbd
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -8750674506638915993, guid: 4419d82f33d36e848b3ed5af4c8da37e, type: 3}
+  moveTwoAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Move Two
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: d48583e7-fde4-44e3-bd5d-b11782a1cc6f
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 9081358577653304646, guid: 4419d82f33d36e848b3ed5af4c8da37e, type: 3}
+  jumpTwoAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Jump Two
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 23d16371-7646-441e-a41b-b6f0a06e7f33
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -6665959690263991519, guid: 4419d82f33d36e848b3ed5af4c8da37e, type: 3}
+  sprintTwoAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Sprint Two
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 5710a894-ba44-49f5-b7ef-c530adeed2ef
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 846749322702634419, guid: 4419d82f33d36e848b3ed5af4c8da37e, type: 3}
+  grabLeftAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Grab Left
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 8f92bb07-ed8a-4271-833e-e350288cd69d
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  grabRightAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Grab Right
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 5501462b-0452-41c2-97c4-46ea35f85899
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  snapTurnAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Snap Turn
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: f359408b-7809-4405-b56e-6d7106771f1e
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
 --- !u!4 &1359255178
 Transform:
   m_ObjectHideFlags: 0
@@ -14784,8 +14893,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1634719270}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -1.5, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 1.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -14794,7 +14903,7 @@ Transform:
   - {fileID: 90950864}
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!114 &1634719272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14811,6 +14920,7 @@ MonoBehaviour:
   thirdPersonBodyTwo: {fileID: 54134398}
   bodyOneRightHand: {fileID: 444743845}
   bodyTwoRightHand: {fileID: 1633018928}
+  logger: {fileID: 1359255177}
 --- !u!114 &1634719273
 MonoBehaviour:
   m_ObjectHideFlags: 0
