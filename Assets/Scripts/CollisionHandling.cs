@@ -7,6 +7,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class CollisionHandling : MonoBehaviour
 {
     private XRGrabInteractable grabbable;
+    public GameObject xrOrigin;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,10 +19,15 @@ public class CollisionHandling : MonoBehaviour
     {
         if(grabbable.isSelected)
         {
+            // Ignore collisions between the game object being grabbed and the XRRig
+            Physics.IgnoreCollision(grabbable.GetComponent<Collider>(), xrOrigin.GetComponent<Collider>(), true);
             // Ignore collisions between Interactables (6) and XRRig (7)
-            Physics.IgnoreLayerCollision(6, 7, true);
+            //Physics.IgnoreLayerCollision(6, 7, true);
         }
         else
-            Physics.IgnoreLayerCollision(6, 7, false);
+        {
+            Physics.IgnoreCollision(grabbable.GetComponent<Collider>(), xrOrigin.GetComponent<Collider>(), false);
+            //Physics.IgnoreLayerCollision(6, 7, false);
+        }
     }
 }

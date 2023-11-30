@@ -8,14 +8,17 @@ public class CollisionInfo : MonoBehaviour
     void Start()
     {
         // Ignore Collisions between avatars and XRRig
-        Physics.IgnoreLayerCollision(6, 7);
-        CharacterController control = GetComponent<CharacterController>();
-        control.detectCollisions = true;
+        // Physics.IgnoreLayerCollision(6, 7);
+        //CharacterController control = GetComponent<CharacterController>();
+        //control.detectCollisions = true;
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         string name = collision.gameObject.name;
         Debug.Log("Colliding with " + name);
+
+        string parentName = collision.gameObject.transform.parent.name;
+        Debug.Log("Colliding with parent " + parentName);
     }
 }

@@ -17,6 +17,8 @@ public class ThirdPersonGrab : MonoBehaviour
     private bool rightControllerGrabbed = false;
     private bool leftControllerGrabbed = false;
 
+    public AudioSource playerAudio;
+
     public ExperimentLogger logger;
     // Start is called before the first frame update
     // void Start()
@@ -132,6 +134,10 @@ public class ThirdPersonGrab : MonoBehaviour
         grabbable.transform.localScale = grabbableScale;
         grabbable.GetComponent<Rigidbody>().useGravity = false;
         grabbable.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, 0f);
+
+        // Turns it invisible
+        grabbable.transform.localScale = new Vector3(0, 0, 0);
+        playerAudio.Play();
     }
 
     public void DropObject()
