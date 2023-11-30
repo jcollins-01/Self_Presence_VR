@@ -438,6 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &40371576
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1154,6 +1155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &58494011
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1502,6 +1504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &110169543
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1689,6 +1692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &119294304
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1876,6 +1880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &140426192
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2951,6 +2956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &223458921
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3258,6 +3264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!114 &257899207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3611,6 +3618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &269999158
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3855,6 +3863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!114 &297143911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4239,6 +4248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &313216387
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4480,6 +4490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &326886345
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4859,6 +4870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &359255496
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5106,6 +5118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!114 &377509492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5882,6 +5895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!114 &529067798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6291,6 +6305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &541109216
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8558,6 +8573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &895429271
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8845,6 +8861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!114 &937726973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9328,6 +9345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!114 &968571152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9701,6 +9719,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!114 &1002259073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10185,6 +10204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &1017066683
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10362,6 +10382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &1025728035
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10733,6 +10754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &1091893537
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10952,6 +10974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &1125086008
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11926,6 +11949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &1350567071
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12329,6 +12353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &1360631407
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12542,6 +12567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!114 &1371142619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12928,6 +12954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &1411241263
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13179,6 +13206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &1466446332
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13708,6 +13736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &1518272135
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14086,6 +14115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &1564337351
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14428,6 +14458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!114 &1619001157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16237,6 +16268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &1723084486
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16706,6 +16738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &1844266294
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16924,6 +16957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &1860638358
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17041,6 +17075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!114 &1867252097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17337,6 +17372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!114 &1874288094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18460,6 +18496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &1982665536
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19294,6 +19331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &2019354419
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19691,6 +19729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &2042278865
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19770,6 +19809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 0}
 --- !u!1 &2073841286 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: f99df1970d4b71441a320ce6acc52709, type: 3}
@@ -19927,6 +19967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32eca00277cd44429ba97a18e6d93c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xrOrigin: {fileID: 197806151}
 --- !u!64 &2073841290
 MeshCollider:
   m_ObjectHideFlags: 0
